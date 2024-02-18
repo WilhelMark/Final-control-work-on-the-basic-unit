@@ -18,5 +18,8 @@ class Program
                 outputIndex++;
             }
         }
+        Array.Resize(ref outputArray, outputIndex);
+        Console.WriteLine("Результат:");
+        Console.WriteLine(string.Join(", ", outputArray));
     }
 }
